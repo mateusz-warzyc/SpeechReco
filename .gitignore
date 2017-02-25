@@ -18,4 +18,4 @@ target/
 desktop.ini
 
 # Frontend
-src/main/webapp/resources/lib/node_modules
+SpeechReco_UI/src/main/webapp/resources/lib/node_modules
