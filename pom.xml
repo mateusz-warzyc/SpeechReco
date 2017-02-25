@@ -9,12 +9,11 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-
     <modules>
         <module>SpeechReco_UI</module>
-        <module>SpeechReco_Persistance</module>
         <module>SpeechReco_Service</module>
         <module>SpeechReco_Shared</module>
+        <module>SpeechReco_Persistence</module>
     </modules>
 
 

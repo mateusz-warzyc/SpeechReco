@@ -9,7 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>SpeechReco_Persistance</artifactId>
+    <artifactId>SpeechReco_Persistence</artifactId>
+    <packaging>jar</packaging>
 
 
 </project>
