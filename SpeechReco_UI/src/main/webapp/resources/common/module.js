@@ -4,5 +4,5 @@
 angular.module("commonModule",[])
 
 .config(function($urlRouterProvider){
-    $urlRouterProvider.otherwise("/index");
+
 });
