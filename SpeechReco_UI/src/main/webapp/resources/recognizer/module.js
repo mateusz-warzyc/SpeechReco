@@ -6,14 +6,16 @@ angular.module("recognizerModule", [])
 .constant("RECOGNIZER_MODULE_STATES", {
     index: "index",
     recognize: "recognize",
-    myListOfTranslations: "myList"
+    myListOfTranslations: "myList",
+    compare: "compare",
+    about: "about"
 })
 
 .config(function ($stateProvider,  $urlRouterProvider, $locationProvider, RECOGNIZER_MODULE_STATES){
 
     var indexState = {
         name: RECOGNIZER_MODULE_STATES.index,
-        url: "/index",
+        url: "/",
         templateUrl: "/resources/recognizer/views/index/index.html",
         controller: "IndexController"
     };
@@ -28,12 +30,28 @@ angular.module("recognizerModule", [])
     var myListState = {
         name: RECOGNIZER_MODULE_STATES.myListOfTranslations,
         url: "/myTranslations",
-        templateUrl: "resources/recognizer/views/myList/myList.html",
+        templateUrl: "/resources/recognizer/views/myList/myList.html",
         controller: "MyListController"
     };
+    var compareState = {
+        name: RECOGNIZER_MODULE_STATES.compare,
+        url: "/compare",
+        templateUrl: "/resources/recognizer/views/compare/compare.html",
+        controller: "CompareController"
+    };
+
+    var aboutState = {
+        name: RECOGNIZER_MODULE_STATES.about,
+        url: "/about",
+        templateUrl: "/resources/recognizer/views/about/about.html",
+        controller: "AboutController"
+    };
+
     $stateProvider.state(indexState);
     $stateProvider.state(recognizeState);
     $stateProvider.state(myListState);
+    $stateProvider.state(compareState);
+    $stateProvider.state(aboutState);
 
     $locationProvider.html5Mode(true);
 });

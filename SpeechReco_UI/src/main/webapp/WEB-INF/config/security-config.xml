@@ -9,12 +9,14 @@
        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
 
     <security:http auto-config="true" use-expressions="true">
-        <security:intercept-url pattern="/login" access="permitAll" />
+        <security:intercept-url pattern="/login.html" access="permitAll" />
+        <security:intercept-url pattern="/register.html" access="permitAll" />
         <security:intercept-url pattern="/resources/recognizer/views/myList/myList.html" access="hasRole('ROLE_USER')" />
         <security:intercept-url pattern="/resources/recognizer/views/recognize/recognize.html" access="hasRole('ROLE_USER')" />
+        <security:intercept-url pattern="/resources/recognizer/views/compare/compare.html" access="hasRole('ROLE_USER')" />
         <security:intercept-url pattern="/**" access="permitAll" />
 
-        <security:form-login login-page="/login" default-target-url="/" always-use-default-target="true"/>
+        <security:form-login login-page="/login.html" default-target-url="/" authentication-failure-url="/login.html?error=true" always-use-default-target="true"/>
 
         <security:logout logout-success-url="/" invalidate-session="true"   delete-cookies="JSESSIONID"/>
 

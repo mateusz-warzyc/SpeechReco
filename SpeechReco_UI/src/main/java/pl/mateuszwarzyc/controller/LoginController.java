@@ -1,9 +1,12 @@
 package pl.mateuszwarzyc.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import pl.mateuszwarzyc.constant.ViewPathMapping;
 
 /**
  * Created by Coffee13.
@@ -11,12 +14,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class LoginController {
 
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    private static final Logger LOGGER = LoggerFactory.getLogger(LoginController.class);
+
+    /**
+     * Renders login page
+     *
+     * @param model
+     * @return
+     */
+    @RequestMapping(value = ViewPathMapping.LOGGING_URI, method = RequestMethod.GET)
     public String getLoginPage(ModelMap model) {
-        model.addAttribute("appName", "SpeechRecognizer");
-        model.addAttribute("author", "Mateusz Warzyc");
+        LOGGER.info("Login page requested");
 
         return "login";
     }
-
 }

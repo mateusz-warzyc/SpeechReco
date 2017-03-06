@@ -1,8 +1,24 @@
-.jumbotron_no_margin {
+.noMarginBottom {
     margin-bottom: 0;
 }
 
 .custom_footer {
     background-color: #222222;
     height: 50px;
+}
+
+.clearBtn {
+    margin-left: 5px;
+}
+
+.spacer {
+    margin-top: 30%;
+}
+
+body {
+    max-width: 100%;
+}
+
+.errorMarginTop {
+    margin-top: 10px;
 }
