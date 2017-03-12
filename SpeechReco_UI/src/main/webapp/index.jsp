@@ -6,6 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
     <meta name="description" content="" />
     <link rel="stylesheet" href="resources/lib/bower_components/bootstrap/dist/css/bootswatch/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/lib/bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="resources/lib/css/site.css">
     <base href="/">
     <title>SpeechRecognizer</title>
@@ -43,12 +44,13 @@
     <div class="container">
         <div class="jumbotron noMarginBottom">
             <h1>SpeechRecognizer</h1>
-            <p>Created by Mateusz Warzyc</p>
+            <p>Turn voice into text!</p>
         </div>
     </div>
     <div class="container" id="srAppRoot">
         <div ng-include="'../resources/menu.html'"></div>
         <ui-view></ui-view>
+        <div ng-include="'../resources/footer.html'"></div>
     </div>
 
     <script type="text/javascript" charset="utf-8" src="../resources/lib/bower_components/jquery/dist/jquery.min.js"></script>

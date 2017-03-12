@@ -22,3 +22,49 @@ body {
 .errorMarginTop {
     margin-top: 10px;
 }
+
+.social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.social {
+    -webkit-transform: scale(0.8);
+    /* Browser Variations: */
+
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+}
+
+/*
+    Multicoloured Hover Variations
+*/
+
+#social-fb:hover {
+    color: #9933cc;
+}
+#social-tw:hover {
+    color: #9933cc;
+}
+#social-gp:hover {
+    color: #9933cc;
+}
+#social-em:hover {
+    color: #9933cc;
+}
+
+a {
+    color: #060606;
+}
+a:hover {
+    color: #9933cc;
+}
+
+.verticalCenter {
+    line-height: inherit;
+}
+
+
